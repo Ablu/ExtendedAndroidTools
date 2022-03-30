@@ -15,6 +15,8 @@ Extended Android Tools is a set of makefiles and build environment cross compili
 # Sysroots
 When projects are built the resulting binaries/libraries are placed in `bin` and `lib` subdirectories of `out/android/$ARCH/` directory. To run a particular tool on an Android device it needs to be pushed together with all the libraries it depends on to the device. In addition the shell environment needs to be configured appropriately for the runtime loader to be able to locate and load those libraries when the tool is executed. To help automate these steps ExtendedAndroidTools provides helper targets preparing sysroot archives consisting of selected executables and libraries, together with scripts setting up the environment. Those archives can be pushed to a device, extracted, and used without any further setup.
 
+
+
 ```
 # build bpftools, sysroot containing bpftrace, python and bcc
 # see the 'Build environment' section for more details on building
